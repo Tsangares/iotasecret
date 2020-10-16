@@ -16,3 +16,9 @@ Once installed you will need to come up with a passphrase and a message to send.
 Remember your passphrase and run the command,
 
     iotasecret read MYPASSPHRASE
+
+## Recieve all messages
+
+To retrieve all the messages you have sent,
+
+    iotasecret read MYPASSPHRASE --all 

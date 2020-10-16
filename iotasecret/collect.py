@@ -1,4 +1,4 @@
-import time,json,math
+import time,json,math,datetime
 from iota import Iota, ProposedTransaction, Address, TryteString, Fragment, Transaction
 from .common import Crypt
 class Collector(Crypt):
@@ -30,8 +30,9 @@ class Collector(Crypt):
     
     def readLatest(self,silent=False):
         messages = self.read()
-        if not silent: print("Latest Message:")
-        return messages[0][1]
+        secconds,msg = messages[0]
+        timestamp = datetime.datetime.fromtimestamp(secconds)
+        return f'{timestamp}: {msg}'
 if __name__=='__main__':
     import argparse
     parser = argparse.ArgumentParser(description='Process some integers.')
