@@ -1,6 +1,6 @@
 import time,json,math
 from iota import Iota, ProposedTransaction, Address, TryteString, Fragment, Transaction
-from common import Crypt
+from .common import Crypt
 class Collector(Crypt):
     def __init__(self,secret):
         super(Collector,self).__init__(secret)

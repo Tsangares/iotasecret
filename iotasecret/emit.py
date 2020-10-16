@@ -1,7 +1,6 @@
 import time,json
 from iota import Iota, ProposedTransaction, Address, TryteString, Fragment, Transaction,adapter
-from multiprocessing import Process
-from common import Crypt
+from .common import Crypt
 class Controller(Crypt):
     def __init__(self,secret):
         super(Controller,self).__init__(secret)
