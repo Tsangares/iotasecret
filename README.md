@@ -13,10 +13,10 @@ The only requirement for two devices to communicate using this method is having 
 
 # Flow Charts of the process
 ### Uploading
-(Upload)[https://i.imgur.com/kN1WU81.png]
+[Upload](https://i.imgur.com/kN1WU81.png)
 
 ### Downloading
-(Download)[https://i.imgur.com/MiBR11S.png]
+[Download](https://i.imgur.com/MiBR11S.png)
 
 # Installation
 
