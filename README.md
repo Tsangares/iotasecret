@@ -36,7 +36,14 @@ To retrieve all the messages you have sent,
 
     iotasecret read MYPASSPHRASE --all 
     
-    
+
+## Changing the node
+
+By default the utility uses `nodes.thetangle.org`, as the IOTA node. If you want to use your own, or a different one simply use the argument `--node`
+
+	iotasecret emit MYPASSPHRASE --message "New node" --node https://mynode.com:443
+    iotasecret read MYPASSPHRASE --node https://mynode.com:443
+
 ### Example
 
     $> iotasecret emit MYPASSPHRASE --message 'my message'  

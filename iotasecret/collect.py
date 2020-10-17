@@ -2,9 +2,9 @@ import time,json,math,datetime
 from iota import Iota, ProposedTransaction, Address, TryteString, Fragment, Transaction
 from .common import Crypt
 class Collector(Crypt):
-    def __init__(self,secret):
+    def __init__(self,secret,node='https://nodes.thetangle.org:443'):
         super(Collector,self).__init__(secret)
-        self.api = Iota(adapter='https://nodes.thetangle.org:443')
+        self.api = Iota(adapter=node)
 
     def getData(self,txHash):
         hashes=api.find_transactions(addresses=[address,])['hashes']

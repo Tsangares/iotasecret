@@ -4,7 +4,7 @@ long_description = open("README.md").read()
 
 setup(
         name='iotasecret',
-        version='0.0.0.6',
+        version='0.0.1.0',
         description='Send secrets using iota.',
         long_description=long_description,
         long_description_content_type="text/markdown",

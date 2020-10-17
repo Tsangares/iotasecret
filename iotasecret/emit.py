@@ -2,9 +2,9 @@ import time,json
 from iota import Iota, ProposedTransaction, Address, TryteString, Fragment, Transaction,adapter
 from .common import Crypt
 class Controller(Crypt):
-    def __init__(self,secret):
+    def __init__(self,secret,node='https://nodes.thetangle.org:443'):
         super(Controller,self).__init__(secret)
-        self.api = Iota(adapter='https://nodes.thetangle.org:443',local_pow=False)
+        self.api = Iota(adapter=node,local_pow=False)
 
     def emit(self,message):
         datum = self.encrypt(json.dumps([time.time(),message]))
