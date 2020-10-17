@@ -11,6 +11,13 @@ Another example is having some note, like a long url, that is on one computer bu
 
 The only requirement for two devices to communicate using this method is having a secure passphrase. This program uses the iotaledger like a map-key database, where the key is a hased version of your passphrase. Give your passphrase to someone else and they have access to the notes stored on the ledger.
 
+# Flow Charts of the process
+### Uploading
+(Upload)[https://i.imgur.com/kN1WU81.png]
+
+### Downloading
+(Download)[https://i.imgur.com/MiBR11S.png]
+
 # Installation
 
 It is a pip package
