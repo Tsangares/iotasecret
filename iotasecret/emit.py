@@ -19,7 +19,7 @@ class Controller(Crypt):
             bundle = self.api.send_transfer(transfers=[tx])['bundle']
         except adapter.BadApiResponse as e:
             print("Bad response from server. Failed to send. Retry")
-            self.emit(message)
+            return self.emit(message)
             
         duration = time.time() - startTime
         reference = bundle.transactions[0].hash            
