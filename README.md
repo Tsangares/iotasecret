@@ -7,7 +7,7 @@ By using the IOTA ledger you can retrieve this data easily without any intermedi
 
 An example is having a Raspberry Pi connected to wifi; you need to ssh into this pi, but you don't know its ip because it is dynamically allocated. Simply have the pi store the ip when it connectes to wifi encrypted on the ledger using this command line utility. Then from any computer, using this utility, you can retrieve the ip of the pi to connect to it. This is done by simply using the same passphrase that the pi used to encrypt the message. 
 
-Another example is having some note, like a url, that is on one computer but will be needed on another computer. You can store it on the ledger encrypted, and retrieve it from the other computer whenever you are ready.
+Another example is having some note, like a long url, that is on one computer but is needed on another computer. You can store it on the ledger encrypted, and retrieve it from the other computer whenever you are ready.
 
 The only requirement for two devices to communicate using this method is having a secure passphrase. This program uses the iotaledger like a map-key database, where the key is a hased version of your passphrase. Give your passphrase to someone else and they have access to the notes stored on the ledger.
 
